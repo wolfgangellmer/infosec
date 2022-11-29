@@ -20,4 +20,5 @@ ForEach ($record in $logs){
 $AuditData = $record.AuditData | ConvertFrom-Json
 if ( $AuditData.Parameters | Where-Object Name -eq 'BlindCopyTo' )
 {$record}}
+
 #WE>>MER

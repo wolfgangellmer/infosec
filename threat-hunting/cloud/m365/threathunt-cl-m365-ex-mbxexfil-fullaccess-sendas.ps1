@@ -39,4 +39,5 @@ ForEach ($record in $logs){
 $AuditData = $record.AuditData | ConvertFrom-Json
 if ( $AuditData.Parameters | Where-Object {($_.Value -eq 'SendAs')})
 {$record}}
+
 #WE>>MER

