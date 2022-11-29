@@ -16,8 +16,7 @@ Get-Mailbox -Resultsize Unlimited | Get-MailboxPermission | Where-Object {
     ($_.Accessrights -like "FullAccess")}
 
 #REPORT: Alle Mailboxen mit SendAs
-Get-Mailbox -Resultsize Unlimited | Get-RecipientPermission | where-Object
-    { ($_.Accessrights -like "SendAs")}
+Get-Mailbox -Resultsize Unlimited | Get-RecipientPermission | where-Object { ($_.Accessrights -like "SendAs")}
 
 
 #DETECT: Admin Audit Logs
