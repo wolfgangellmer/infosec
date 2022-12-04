@@ -9,5 +9,5 @@ $filehash = Get-FileHash -Algorithm SHA256 -Path $filestocheck
 
 #check filehash
 get-VTFileReport -h $filehash
-
+#https://developers.virustotal.com/reference/ip-info
 #we>>mer
