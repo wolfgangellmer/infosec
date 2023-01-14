@@ -1,0 +1,27 @@
+---
+- name: Update and upgrade OS and applications
+  hosts: all
+  become: true
+  tasks:
+    - name: Update package manager cache
+      apt:
+        update_cache: yes
+    
+    - name: Upgrade packages
+      apt:
+        upgrade: yes
+        
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        
+    - name: Install Lynis
+      apt:
+        name: lynis
+        state: present
+        
+    - name: Install Nmap
+      apt:
+        name: nmap
+        state: present
