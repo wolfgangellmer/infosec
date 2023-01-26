@@ -11,4 +11,4 @@ UsoClient StartInstall
 UsoClient RestartDevice
 
 #updates scan + download + install
-UsoClient ScanInstallWait 
+UsoClient ScanInstallWait
