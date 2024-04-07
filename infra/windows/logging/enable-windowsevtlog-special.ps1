@@ -18,14 +18,12 @@ $LogNames = @(
                 "Microsoft-Windows-SMBClient/Operational", 
                 "Microsoft-Windows-SMBServer/Operational", 
                 "Microsoft-Windows-SMBServer/Security", 
-                "Microsoft-Windows-PowerShell/Operational"      
-                
-                #SOC
+                "Microsoft-Windows-PowerShell/Operational"                   
+                #SOC input
                 #medium value low volume
                 "Microsoft-Windows-DriverFrameworks-UserMode/Operational"
                 "Microsoft-Windows-Bits-Client/Operational"
-                "Microsoft-Windows-Windows Defender/Operational"
-            
+                "Microsoft-Windows-Windows Defender/Operational"            
             )
 
 
